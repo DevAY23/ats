@@ -25,8 +25,9 @@ function App() {
   useAutoLogout(); // Use the hook for auto logout functionality
 
   return (
+
     <Routes>
-      <Route path="/attendance" element={<Loginform />} /> {/* The login form will be shown at the root path */}
+      <Route path="/" element={<Loginform />} /> {/* The login form will be shown at the root path */}
 
       {/* Protect all the routes below with PrivateRoute */}
       <Route

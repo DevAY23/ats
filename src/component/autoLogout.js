@@ -16,7 +16,7 @@ const useAutoLogout = () => {
     const logout = () => {
       localStorage.removeItem('auth_token');
       alert('You have been logged out due to inactivity.');
-      navigate('/attendance'); // Redirect to login page
+      navigate('/'); // Redirect to login page
     };
 
     // Function to reset the logout timer

@@ -12,7 +12,7 @@ function AdminDashboard() {
     const token = localStorage.getItem('auth_token');
     const role = localStorage.getItem('role');
     if (!token || role !== 'admin') {
-      navigate('/attendance'); // Redirect to login if not an admin
+      navigate('/'); // Redirect to login if not an admin
     }
   }, [navigate]);
 
@@ -23,7 +23,7 @@ function AdminDashboard() {
   const handleLogout = () => {
     localStorage.removeItem('auth_token');
     localStorage.removeItem('role');
-    navigate('/attendance'); // Navigate back to the login page
+    navigate('/'); // Navigate back to the login page
   };
 
   return (
