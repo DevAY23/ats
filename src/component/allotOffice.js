@@ -68,7 +68,7 @@ const AllotOffice = () => {
         }
       );
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         alert(`Office "${officeName}" allotted successfully`);
         setSelectedOffices((prevSelected) => ({
           ...prevSelected,
